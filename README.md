@@ -21,6 +21,8 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
 
-# УСТАНОВКА С 0
+# Command 0
 
+npx create-nx-workspace@latest --preset=react --bundler=vite
 
+selected -> react app with libs -> emotion
