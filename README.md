@@ -20,9 +20,42 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
-
 # Command 0
 
-npx create-nx-workspace@latest --preset=react --bundler=vite
+`npx create-nx-workspace@latest --preset=react --bundler=vite`
 
 selected -> react app with libs -> emotion
+
+# steps 2
+
+https://whoisryosuke.com/blog/2022/using-nx-for-react-and-typescript-monorepos/
+
+## add library
+
+`nx g @nrwl/react:library libName`
+
+## delete library
+
+`nx generate remove nameOfLibrary`
+
+## add library as route
+
+`nx g lib adminLibrary --appProject=craftapp`
+
+# create react app
+
+`nx g @nrwl/react:application appName`
+
+# serve app
+
+`nx run appName:serve`
+
+# create node serever
+
+`nx generate @nrwl/node:application`
+
+# TESTING
+
+# run library test in watch mode, "p" - regular expression for specific test
+
+`nx run algorithms-datastructures:test --watch`

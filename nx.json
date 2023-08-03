@@ -5,7 +5,13 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
       }
     }
   },
@@ -18,7 +24,7 @@
       "inputs": ["default", "^production"]
     },
     "test": {
-      "inputs": ["default", "^production"]
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
     },
     "lint": {
       "inputs": [
@@ -26,6 +32,9 @@
         "{workspaceRoot}/.eslintrc.json",
         "{workspaceRoot}/.eslintignore"
       ]
+    },
+    "build-storybook": {
+      "inputs": ["default", "^production", "!{projectRoot}/.storybook/**/*"]
     }
   },
   "namedInputs": {
@@ -34,7 +43,10 @@
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/.eslintrc.json"
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/.storybook/**/*",
+      "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)"
     ],
     "sharedGlobals": []
   },
@@ -50,6 +62,18 @@
         "style": "@emotion/styled"
       },
       "library": {
+        "style": "@emotion/styled",
+        "linter": "eslint",
+        "unitTestRunner": "jest"
+      }
+    },
+    "@nx/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nx/next": {
+      "application": {
         "style": "@emotion/styled",
         "linter": "eslint"
       }

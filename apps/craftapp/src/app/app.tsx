@@ -1,11 +1,17 @@
 import styled from '@emotion/styled';
 
-const StyledApp = styled.div`
-  // Your style here
-`;
+import { Route, Routes } from 'react-router-dom';
+
+const StyledApp = styled.div``;
 
 export function App() {
-  return <StyledApp>HELLO</StyledApp>;
+  return (
+    <StyledApp>
+      <Routes>
+        <Route path="/admin" element={<p>User Created </p>}></Route>
+      </Routes>
+    </StyledApp>
+  );
 }
 
 export default App;
