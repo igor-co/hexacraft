@@ -57,6 +57,7 @@
     "@nx/next": "^16.5.2",
     "@nx/react": "16.5.2",
     "@nx/react-native": "16.5.2",
+    "@nx/vite": "16.5.2",
     "@react-native-community/cli": "10.2.2",
     "@react-native-community/cli-platform-android": "10.2.0",
     "@react-native-community/cli-platform-ios": "10.2.1",
@@ -80,8 +81,8 @@
     "@typescript-eslint/eslint-plugin": "5.60.1",
     "@typescript-eslint/parser": "5.60.1",
     "@vitejs/plugin-react": "4.0.0",
-    "@vitest/coverage-c8": "0.31.0",
-    "@vitest/ui": "0.31.0",
+    "@vitest/coverage-c8": "~0.32.0",
+    "@vitest/ui": "~0.32.0",
     "babel-jest": "^29.4.1",
     "babel-loader": "8.1.0",
     "cypress": "^12.16.0",
@@ -117,10 +118,10 @@
     "ts-node": "10.9.1",
     "typescript": "5.1.6",
     "url-loader": "^4.1.1",
-    "vite": "4.3.4",
+    "vite": "~4.3.9",
     "vite-plugin-dts": "2.3.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-tsconfig-paths": "4.2.0",
-    "vitest": "0.31.0"
+    "vitest": "~0.32.0"
   }
 }

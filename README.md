@@ -56,6 +56,6 @@ https://whoisryosuke.com/blog/2022/using-nx-for-react-and-typescript-monorepos/
 
 # TESTING
 
-# run library test in watch mode, "p" - regular expression for specific test
+### run library test in watch mode, "p" - regular expression for specific test
 
 `nx run algorithms-datastructures:test --watch`
