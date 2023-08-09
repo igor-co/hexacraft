@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "types": ["node", "vite/client"]
+  },
+  "files": [
+    "../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
+    "../../node_modules/@nrwl/react/typings/image.d.ts",
+    "src/lib/user-form/user-form.view.tsx",
+    "src/lib/user-form/user-form.view-state.tsx",
+    "src/lib/user-form/user-form.view-model.tsx"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.spec.tsx",
+    "**/*.test.tsx",
+    "**/*.spec.js",
+    "**/*.test.js",
+    "**/*.spec.jsx",
+    "**/*.test.jsx"
+  ],
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+}

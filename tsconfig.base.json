@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {}
+    "paths": {
       "@hexacraft/domain": ["libs/domain/src/index.ts"],
+      "@hexacraft/page": ["libs/page/src/index.ts"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
