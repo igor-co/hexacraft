@@ -1,10 +1,11 @@
 // https://www.youtube.com/watch?v=PrQeeUt49f4&t=1s&ab_channel=DesignCourse
 // https://greensock.com/docs/v3/Plugins/ScrollTrigger
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import styled from '@emotion/styled';
-import Lenis from '@studio-freight/lenis';
+
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useSmoothScroll } from '../_hooks/useSmoothScroll';
 
 // Do not forget to register plugin in order to use it
 gsap.registerPlugin(ScrollTrigger);
@@ -39,27 +40,6 @@ const Title = styled.h1`
   font-size: 2rem;
   text-align: center;
 `;
-
-const useSmoothScroll = () => {
-  // smooth scrolls
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    // lenis.on('scroll', (e) => {
-    //   console.log(e);
-    // });
-
-    const raf = (time: number): void => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-
-    requestAnimationFrame(raf);
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
-};
 
 function AnimationsScroll(props: Props): JSX.Element {
   useSmoothScroll();
