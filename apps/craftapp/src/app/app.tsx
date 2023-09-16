@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { Route, Routes } from 'react-router-dom';
 
 import { Page } from '@hexacraft/page';
-import { Animations } from '@hexacraft/animations';
+import { AnimationsScroll } from '@hexacraft/animations';
 
 const StyledApp = styled.div``;
 
@@ -13,7 +13,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Page />}></Route>
         <Route path="/admin" element={<p>User Created </p>}></Route>
-        <Route path="/animations" element={<Animations />}></Route>
+        <Route path="/animations-scroll" element={<AnimationsScroll />}></Route>
       </Routes>
     </StyledApp>
   );
