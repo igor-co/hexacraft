@@ -9,7 +9,12 @@ import {
   AnimationsTextScroll,
 } from '@hexacraft/animations';
 
-const StyledApp = styled.div``;
+const StyledApp = styled.div`
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+`;
 
 export function App() {
   return (
@@ -17,6 +22,10 @@ export function App() {
       <Routes>
         <Route path="/" element={<Page />}></Route>
         <Route path="/admin" element={<p>User Created </p>}></Route>
+        <Route
+          path="/animations-progress"
+          element={<AnimationsProgress />}
+        ></Route>
         <Route path="/animations-scroll" element={<AnimationsScroll />}></Route>
         <Route
           path="/animations-text-scroll"
