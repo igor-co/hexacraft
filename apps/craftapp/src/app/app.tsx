@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Page } from '@hexacraft/page';
 import {
   Animations,
+  AnimationsProgress,
   AnimationsScroll,
   AnimationsTextScroll,
 } from '@hexacraft/animations';
