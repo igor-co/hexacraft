@@ -7,15 +7,11 @@ import {
   Animations,
   AnimationsProgress,
   AnimationsScroll,
+  AnimationsSetStaggerFromTo,
   AnimationsTextScroll,
 } from '@hexacraft/animations';
 
-const StyledApp = styled.div`
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-`;
+const StyledApp = styled.div``;
 
 export function App() {
   return (
@@ -28,6 +24,11 @@ export function App() {
           element={<AnimationsProgress />}
         ></Route>
         <Route path="/animations-scroll" element={<AnimationsScroll />}></Route>
+        <Route
+          path="/animations-set-stagger-fromto'
+"
+          element={<AnimationsSetStaggerFromTo />}
+        ></Route>
         <Route
           path="/animations-text-scroll"
           element={<AnimationsTextScroll />}
