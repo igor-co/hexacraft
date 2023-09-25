@@ -1,10 +1,10 @@
-// https://designcourse.com/app/course/advanced-frontends/module/set-stagger-fromto
+// https://designcourse.com/app/course/advanced-frontends/module/headline-tags
 
 import './styles.css';
 
 import { gsap } from 'gsap';
 
-function AnimationsHeaderHoverReveal(): JSX.Element {
+function AnimationsHeadlineHoverReveal(): JSX.Element {
   const tagShow = gsap.to('span', {
     opacity: 1,
     stagger: 0.2,
@@ -60,4 +60,4 @@ function AnimationsHeaderHoverReveal(): JSX.Element {
   );
 }
 
-export { AnimationsHeaderHoverReveal };
+export { AnimationsHeadlineHoverReveal };

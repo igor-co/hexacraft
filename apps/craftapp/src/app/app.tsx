@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Page } from '@hexacraft/page';
 import {
   Animations,
-  AnimationsHeaderHoverReveal,
+  AnimationsHeadlineHoverReveal,
   AnimationsProgress,
   AnimationsScroll,
   AnimationsSetStaggerFromTo,
@@ -27,7 +27,7 @@ export function App() {
         <Route path="/animations-scroll" element={<AnimationsScroll />}></Route>
         <Route
           path="/animations-headline-hover-reveal"
-          element={<AnimationsHeaderHoverReveal />}
+          element={<AnimationsHeadlineHoverReveal />}
         ></Route>
         <Route
           path="/animations-set-stagger-fromto'

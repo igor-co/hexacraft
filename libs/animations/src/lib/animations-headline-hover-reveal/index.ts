@@ -1,1 +1,1 @@
-export { AnimationsHeaderHoverReveal } from './animations-headline-hover-reveal';
+export { AnimationsHeadlineHoverReveal } from './animations-headline-hover-reveal';
